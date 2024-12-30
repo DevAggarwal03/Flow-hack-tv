@@ -5,7 +5,7 @@ import axios from "axios";
 import { useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import * as cryptojs from 'crypto-js';
 import { LoaderCircle, CheckCircle2, XCircle } from 'lucide-react';
-import { contractAbi, contractAddress } from "@/utils/NeoXContractDetails";
+import { contractAbi, contractAddress } from "@/utils/FlowContractHack";
 
 interface MovieDetails {
     movieName: string;

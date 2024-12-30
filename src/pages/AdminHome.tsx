@@ -9,7 +9,7 @@ import "../utils/loader.css"
 import { useEthersSigner } from "@/utils/providerChange";
 import { useEffect, useState } from "react";
 import { Contract } from "ethers";
-import { contractAbi, contractAddress } from "@/utils/NeoXContractDetails";
+import { contractAbi, contractAddress } from "@/utils/FlowContractHack";
 
 
 const AdminHome = () => {

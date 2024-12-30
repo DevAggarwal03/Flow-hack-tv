@@ -3,7 +3,7 @@ import MovieCard from "@/components/MovieCard";
 import Navbar from "@/components/Navbar";
 import image from "../assets/Group 1.png";
 import "../utils/loader.css"
-import { contractAbi, contractAddress } from "@/utils/NeoXContractDetails";
+import { contractAbi, contractAddress } from "@/utils/FlowContractHack";
 import Chatbox from "@/components/Chatbox";
 import { useReadContract } from "wagmi";
 import "../utils/trouble.css"

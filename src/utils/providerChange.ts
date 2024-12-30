@@ -13,12 +13,12 @@ export function clientToSigner(client: Client<Transport, Chain, Account>) {
     }
 
     console.log(network)
-
+    
     const provider = new BrowserProvider(transport, network);
     const signer = new JsonRpcSigner(provider, account.address)
     return signer
   }
-  else if(chain?.id === 12227332) {
+  else if(chain?.id === 545) {
     console.log(chain)
     const network = {
         chainId: chain.id,

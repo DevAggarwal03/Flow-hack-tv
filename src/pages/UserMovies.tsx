@@ -1,4 +1,4 @@
-import { contractAbi, contractAddress } from "../utils/NeoXContractDetails";
+import { contractAbi, contractAddress } from "../utils/FlowContractHack";
 import { useAccount, useReadContracts } from "wagmi";
 import "../utils/loader.css"
 import "../utils/trouble.css"

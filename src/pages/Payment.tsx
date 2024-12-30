@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { useReadContract } from "wagmi";
 import { useParams } from "react-router-dom";
 import "../utils/loader.css"
-import { contractAbi, contractAddress } from "@/utils/NeoXContractDetails";
+import { contractAbi, contractAddress } from "@/utils/FlowContractHack";
 interface posterData {
   movieId: number,
   name: string;

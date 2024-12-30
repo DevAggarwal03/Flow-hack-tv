@@ -4,7 +4,7 @@ import MovieInfo from "../components/MovieInfo";
 import { video } from "@/DummyData/videosData";
 import MovieCard from "@/components/MovieCard";
 import { useAccount, useReadContracts } from "wagmi";
-import { contractAddress, contractAbi } from "@/utils/NeoXContractDetails";
+import { contractAddress, contractAbi } from "@/utils/FlowContractHack";
 import * as cryptojs from 'crypto-js';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";

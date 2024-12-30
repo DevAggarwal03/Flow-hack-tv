@@ -1,7 +1,7 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Link } from "react-router-dom";
 import { useAccount } from "wagmi";
-import { contractAbi, contractAddress } from "@/utils/NeoXContractDetails";
+import { contractAbi, contractAddress } from "@/utils/FlowContractHack";
 import { useEffect, useState } from "react";
 import { useEthersSigner } from "@/utils/providerChange";
 import { Contract } from "ethers";
@@ -13,6 +13,7 @@ const Navbar = () => {
   const connectedAcc = useAccount()
   
   const signer = useEthersSigner({chainId: connectedAcc.chainId})
+  console.log(signer)
 
   useEffect(() => {
     const contractSigned = new Contract(contractAddress, contractAbi, signer);

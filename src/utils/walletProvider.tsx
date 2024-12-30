@@ -4,11 +4,12 @@ import {
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi'
+import { flowTestnet } from 'viem/chains';
 import {
   QueryClientProvider,
   QueryClient,
 } from "@tanstack/react-query";
-import { NeoX } from './ChainConfig';
+// import { NeoX } from './ChainConfig';
 import { darkTheme } from '@rainbow-me/rainbowkit';
 import React from 'react';
 
@@ -16,7 +17,7 @@ import React from 'react';
 const config = getDefaultConfig({
   appName: 'NeoX',
   projectId: '121',
-  chains: [NeoX],
+  chains: [flowTestnet],
   ssr: false,
 });
 
