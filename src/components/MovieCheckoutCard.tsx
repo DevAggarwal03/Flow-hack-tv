@@ -1,5 +1,5 @@
 import React from "react";
-import { contractAddress, contractAbi } from "@/utils/NeoXContractDetails";
+import { contractAddress, contractAbi } from "@/utils/FlowContractHack";
 import { useWriteContract } from "wagmi";
 import { useWaitForTransactionReceipt } from "wagmi";
 import { useNavigate } from "react-router-dom";
